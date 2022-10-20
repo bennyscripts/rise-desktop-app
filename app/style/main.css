@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+body {
+    background-color: #0e0e0e;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+    height: 100vh;
+}
+
+.config {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    flex-grow: 1;
+    margin: 10px;
+    overflow-y: scroll;
+    height: 97%;
+}
+
+.config::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 5px;
+}
+
+.config::-webkit-scrollbar-track {
+    background: #0000005c;
+    border-radius: 5px;
+}
+
+.config::-webkit-scrollbar-thumb {
+    background: #ffffff0a;
+    border-radius: 5px;
+}
+
+.config::-webkit-scrollbar-thumb:hover {
+    background: #ffffff13;
+    border-radius: 5px;
+}
+
+.config-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff0d;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.config-key {
+    width: 30ch
+}
+
+.config-value-wrapper {
+    width: 100%;
+    margin-right: 20px;
+}
+
+.config-value[type="text"],
+.config-value[type="number"],
+.config-value[type="password"],
+.config-value[type="email"] {
+    background-color: #ffffff21;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.config-value[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.sidebar {
+    width: 100px;
+    background: #0000005c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar-items {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.sidebar-items p {
+    background-color: #ffffff0a;
+    padding: 10px 20px;
+    display: block;
+    margin: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 40px;
+    font-size: 1.25em;
+}
+
+.sidebar-items p:hover {
+    background-color: #ffffff13;
+}
+
+.sidebar-items .active {
+    background-color: #b668ff46;
+}
+
+.sidebar-items .active:hover {
+    background-color: #b668ff6e;
+}
+
+.page-info {
+    padding: 10px;
+}
+
+.page-title,
+.page-description {
+    margin: 0px;
+}
+
+.page-description {
+    margin-top: 5px;
+    color: #e0e0ee8a;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    flex-grow: 1;
+    margin: 10px;
+}
+
+.stat-card {
+    background-color: #ffffff0d;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.stat-card h1,
+.stat-card h2,
+.stat-card h3 {
+    margin: 0px;
+}

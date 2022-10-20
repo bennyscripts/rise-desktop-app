@@ -1,0 +1,16 @@
+{
+  "name": "rise-desktop-app",
+  "version": "1.0.0",
+  "description": "A desktop app for configuring Rise Selfbot",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron --trace-warnings src/app.js"
+  },
+  "author": "Ben Tettmar",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^21.1.1",
+    "fs": "^0.0.1-security"
+  }
+}
